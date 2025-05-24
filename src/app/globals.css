@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 39, 0, 77;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: auto;
+  overflow-y: auto; /* Add this line */
+}
+
+
+#__next {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Optional: Ensure body stretches with content */
+body {
+  color: rgb(var(--foreground-rgb));
+  background: black;
+}
+
+
+/* Ensure images don't cause overflow */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Comment out or remove this section in global.css */
+
+
+
+/* Add this to your custom utilities if not already using Tailwind */
+.bg-contain {
+  background-size: contain;
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+
+.footer {
+  position: relative; /* default is usually static, relative is safer */
+  z-index: 20; /* Make sure it's above most content */
+}

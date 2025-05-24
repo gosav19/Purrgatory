@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: black;
+}
+
+.door-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 50; /* Higher than footer so door stays on top */
+  background-color: black;
+}
+
+.door-image {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  cursor: default; /* Remove pointer cursor from entire image */
+}
+
+/* Clickable door area - positioned over the entire open doorway */
+.door-clickable-area {
+  position: absolute;
+  top: 20%; /* Cover the full height of the doorway */
+  left: 49%; /* Moved further to the right */
+  width: 8%; /* Wide enough to cover the entire open doorway */
+  height: 60%; /* Full height of the open doorway */
+  cursor: pointer;
+}
+
+/* Remove these unused styles */
+.button-container {
+  display: none;
+}
+
+.enter-button {
+  display: none;
+}
+
+html, body, #__next, #root {
+  background-image: none !important;
+}
