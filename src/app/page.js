@@ -50,7 +50,7 @@ export default function HomePage() {
               Welcome to Purrgatory
             </h1>
             <p className="mt-4 text-lg text-black italic">
-              Nine lives weren't enough. Welcome to the afterlife of feline rebellion.
+              Nine lives weren&apos;t enough. Welcome to the afterlife of feline rebellion.
             </p>
             <div className="mt-6 flex justify-center gap-4">
               <button

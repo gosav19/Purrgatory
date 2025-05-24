@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './Door.css';
+import './door.css';
 
 const Door = ({ onEnter }) => {
   useEffect(() => {

@@ -2,7 +2,8 @@
 
 import React, { useState } from 'react';
 import Button from '@/components/ui/button'; // Assuming default export
-import Input from '@/components/ui/input'; // Assuming default export
+import Input from '@/components/ui/Input';
+ // Assuming default export
 import { Twitter, Instagram, Github } from 'lucide-react';
 import { FaDiscord } from 'react-icons/fa'; // Correct import
 

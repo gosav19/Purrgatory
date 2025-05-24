@@ -1,6 +1,7 @@
 'use client';
 
 import { useContract, useNFTs } from "@thirdweb-dev/react";
+import Image from 'next/image';
 
 const contractAddress = "0x26e02fD009941357d412afAb08D3F7FC560F258F";
 
@@ -68,14 +69,14 @@ export default function GalleryPage() {
               key={nft.metadata.id}
               className="flex flex-col items-center text-center bg-zinc-900 p-6 rounded-2xl shadow-md w-full max-w-xs"
             >
-              <img
+              <Image
                 src={nft.metadata.image}
                 alt={nft.metadata.name}
-                className="w-64 h-64 object-contain mb-4 rounded-lg"
+                width={256}
+                height={256}
+                className="object-contain mb-4 rounded-lg"
               />
               <h2 className="text-xl font-semibold mb-2">{nft.metadata.name}</h2>
-
-              {/* Description removed */}
 
               <div className="space-y-1 text-sm">
                 {nft.metadata.attributes?.map((attr, index) => (
